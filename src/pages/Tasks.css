@@ -1,0 +1,38 @@
+.filter-tabs { display: flex; gap: 8px; }
+.filter-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+  text-transform: lowercase;
+}
+.filter-btn:hover { border-color: var(--accent); color: var(--text); }
+.filter-btn.active { background: rgba(232,132,58,0.12); border-color: rgba(232,132,58,0.4); color: var(--accent); }
+.filter-count { margin-left: 6px; background: var(--surface2); padding: 1px 6px; border-radius: 10px; font-size: 10px; }
+
+.task-list { display: flex; flex-direction: column; gap: 8px; }
+.task-item {
+  display: flex; align-items: center; gap: 14px;
+  padding: 14px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.task-item:hover { border-color: #2a3f5f; transform: translateX(4px); }
+.task-item.done { opacity: 0.55; }
+.task-item.in-progress { border-left: 3px solid var(--accent); }
+
+.task-status-icon { flex-shrink: 0; }
+.task-body { flex: 1; display: flex; flex-direction: column; gap: 6px; }
+.task-title { font-size: 14px; color: var(--text); }
+.done-text { text-decoration: line-through; color: var(--muted); }
+.task-meta { display: flex; align-items: center; gap: 10px; }
+.task-tag { font-size: 11px; color: var(--muted); font-family: var(--mono); }
+.task-due { display: flex; align-items: center; gap: 4px; font-size: 11px; color: var(--muted); font-family: var(--mono); }
