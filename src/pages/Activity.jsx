@@ -54,7 +54,7 @@ export default function Activity() {
           <div style={{ fontSize: 13, color: 'var(--muted)', fontFamily: 'var(--mono)', marginBottom: 16 }}>Language Distribution</div>
           <ResponsiveContainer width="100%" height={250}>
             <PieChart>
-              <Pie data={languageData} dataKey="value" cx="50%" cy="50%" outerRadius={100} innerRadius={50} paddingAngle={0} strokewidth{0}>
+              <Pie data={languageData} dataKey="value" cx="50%" cy="50%" outerRadius={100} innerRadius={50} paddingAngle={0} strokeWidth={0}>
                 {languageData.map((entry, i) => (
                   <Cell key={i} fill={entry.color} />
                 ))}
